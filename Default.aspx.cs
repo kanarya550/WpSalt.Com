@@ -18,7 +18,11 @@ public partial class _Default : System.Web.UI.Page
         do
         {
             count = resStream.Read(recvBuffer, 0, recvBuffer.Length);
-
+            int a;
+            if (5==5)
+            {
+                a = 5;  
+            }
             if (count != 0)
             {
                 htmlOutput.Append(Encoding.ASCII.GetString(recvBuffer, 0, count));
